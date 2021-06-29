@@ -28,7 +28,7 @@ if __name__ == "__main__":
     parser.add_argument('--n_epoch', type=int, default=100, help='number of training epochs')
     parser.add_argument('--batch_size', type=int, default=1, help='training batch size')
     parser.add_argument('--n_threads', type=int, default=16, help='number of parallel threads for dataloaders')
-    parser.add_argument('--seed', type=int, default=1986, help='Pseudo-RNG seed')
+    parser.add_argument('--seed', type=int, default=1027, help='Pseudo-RNG seed')
     args = parser.parse_args()
 
      # get current device and weather master device
@@ -71,7 +71,7 @@ if __name__ == "__main__":
 
     # training loop
     for epoch in range(args.start_epoch+1, args.n_epoch):
-        
+
         # Training
         train_epoch(model,optimizer,train_dataloader,args,epoch,DDP=True)
         # validation
