@@ -26,7 +26,7 @@ if __name__ == "__main__":
     # training parameters
     parser.add_argument('--start_epoch', type=int, default=-1, help='start epoch')
     parser.add_argument('--n_epoch', type=int, default=100, help='number of training epochs')
-    parser.add_argument('--batch_size', type=int, default=1, help='training batch size')
+    parser.add_argument('--batch_size', type=int, default=4, help='training batch size')
     parser.add_argument('--n_threads', type=int, default=16, help='number of parallel threads for dataloaders')
     parser.add_argument('--seed', type=int, default=1027, help='Pseudo-RNG seed')
     args = parser.parse_args()
