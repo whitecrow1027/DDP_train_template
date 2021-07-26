@@ -47,5 +47,5 @@ def val_epoch(net,val_loader,args,epoch,DDP='True'):
             #etc
             pass
 
-        if is_master: ### val log should only run on master
-            pass
+            if is_master: ### val log should only run on master
+                pass
